@@ -1,0 +1,53 @@
+#inputX,
+#inputO {
+    width: 40px;
+    border-radius: 35%;
+    background-color: #273342;
+    color: #95a7c1;
+    text-align: center;
+    border-right: 1px solid #141a22;
+    border-bottom: 1px solid #141a22;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#ButtonX,
+#ButtonO {
+    width: 60px;
+    border-radius: 50%;
+    background-color: #54667f;
+    color: white;
+    text-align: center;
+    border: 1px solid #54667f;
+    height: 60px;
+    margin-left: 10px;
+    box-shadow: 3px 3px 0 0 #344359;
+}
+
+.tabheader {
+    margin-left: 35%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tic-tac-toe-table {
+    width: 500px;
+    height: 500px;
+    margin-left: 30%;
+}
+
+.tic-tac-toe-table-cell {
+    border: 3px solid #283344;
+    width: 33.3%;
+    height: 33.3%;
+    position: relative;
+}
+
+.butonexecute {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}

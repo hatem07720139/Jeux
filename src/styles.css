@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-size: 14px;
+    font-family: Helvetica, Arial, 'Sans serif';
+    color: #4c525c;
+    background: #4c525c;
+}
