@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 tabheader">
-                <input disabled type="text" value="0" id="inputX">
+                <input disabled type="text" value="0" id="inputX" #playX>
                 <button id="ButtonX">X</button>
                 <button id="ButtonO">O</button>
-                <input disabled type="text" value="0" id="inputO">
+                <input disabled type="text" value="0" id="inputO" #playO>
             </div>
         </div>
     </div>
@@ -16,19 +16,19 @@
                 <table class="tic-tac-toe-table">
                     <tbody>
                         <tr>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(0)">{{game[0]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(1)">{{game[1]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(2)">{{game[2]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(0);Thewinner(playX,playO)">{{game[0]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(1);Thewinner(playX,playO)">{{game[1]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(2);Thewinner(playX,playO)">{{game[2]}}</button></td>
                         </tr>
                         <tr>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(3)">{{game[3]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(4)">{{game[4]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(5)">{{game[5]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(3);Thewinner(playX,playO)">{{game[3]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(4);Thewinner(playX,playO)">{{game[4]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(5);Thewinner(playX,playO)">{{game[5]}}</button></td>
                         </tr>
                         <tr>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(6)">{{game[6]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(7)">{{game[7]}}</button></td>
-                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(8)">{{game[8]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(6);Thewinner(playX,playO)">{{game[6]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(7);Thewinner(playX,playO)">{{game[7]}}</button></td>
+                            <td class="tic-tac-toe-table-cell"><button class="butonexecute" (click)="players(8);Thewinner(playX,playO)">{{game[8]}}</button></td>
                         </tr>
                     </tbody>
                 </table>
