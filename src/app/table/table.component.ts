@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+  public n=0;
   winner: boolean;
   player = 'X';
   game = ['', '', '', '', '', '', '', '', '',]
@@ -37,12 +38,24 @@ export class TableComponent implements OnInit {
         else {
           playO.value = Number(playO.value) + 1;
         }
+        this.n=0;
         this.winner = true;
         break;
       }
     }
     for (let i = 0; i < this.game.length; i++) {
-      if (this.winner === true) {
+
+      if (this.winner === false && this.game[i]!="") {
+        this.n=this.n+1;
+        console.log(this.n);
+        break;
+      }
+    }
+    if (this.n===9) {
+      alert("game draw")
+    }
+    for (let i = 0; i < this.game.length; i++) {
+      if (this.winner === true ||this.n===9) {
         this.game[i] = "";
       }
     }
